@@ -8,7 +8,7 @@
 
                 <h1 class="page-header">
                     <?= $titulo ?> -
-                    <small><?= $subtitulo ?></small>
+                    <small><?= $subtitulo ? $subtitulo : $subtitulodb ?></small>
                 </h1>
 
                 <?php foreach ($postagens as $destaque): ?>

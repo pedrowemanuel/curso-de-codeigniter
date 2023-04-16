@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Blog do CodeIgniter</a>
+                <a class="navbar-brand" href="<?= base_url() ?>">Blog do CodeIgniter</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -18,12 +18,12 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <?php foreach ($categorias as $categoria): ?>
-                        <li><a href="<?= base_url('categorias/'.$categoria->id.'/'.limpar($categoria->titulo)) ?>"><?= $categoria->titulo; ?></a></li>
+                        <li><a href="<?= base_url('categoria/'.$categoria->id.'/'.limpar($categoria->titulo)) ?>"><?= $categoria->titulo; ?></a></li>
                         <?php endforeach; ?>
                       </ul>
                     </li>
                     <li>
-                        <a href="#">Sobre Nós</a>
+                        <a href="<?= base_url('sobrenos') ?>">Sobre Nós</a>
                     </li>
                     <li>
                         <a href="#">Contato</a>

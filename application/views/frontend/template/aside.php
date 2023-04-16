@@ -22,7 +22,7 @@
                         <div class="col-lg-12">
                             <ul class="list-unstyled">
                                 <?php foreach ($categorias as $categoria): ?>
-                                    <li><a href="<?= base_url('categorias/'.$categoria->id.'/'.limpar($categoria->titulo)) ?>"><?= $categoria->titulo; ?></a></li>
+                                    <li><a href="<?= base_url('categoria/'.$categoria->id.'/'.limpar($categoria->titulo)) ?>"><?= $categoria->titulo; ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
