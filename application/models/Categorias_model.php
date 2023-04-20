@@ -27,4 +27,10 @@ class Categorias_model extends CI_Model
         $resultado = $this->db->get()->result();
         return count($resultado) > 0 ? $resultado[0]->titulo : '';
     }
+
+    public function adicionar($titulo)
+    {
+        $dados['titulo'] = $titulo;
+        return $this->db->insert('categoria', $dados);
+    }
 }
